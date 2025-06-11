@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] public GameObject uiMainButton { get; private set;}
-    [SerializeField] public GameObject uiStatus {get; private set;}
-    [SerializeField] public GameObject uiInventory {get; private set;}
+    [SerializeField] public GameObject uiMainButton;
+
+    [SerializeField] public GameObject uiStatus;
+    [SerializeField] public GameObject uiInventory;
     
-    UIMainMenu uiMainMenu;
+    public UIMainMenu uiMainMenu;
 
     public static UIManager Instance { get; private set; }
 
@@ -27,17 +28,4 @@ public class UIManager : MonoBehaviour
         uiMainMenu = FindObjectOfType<UIMainMenu>();
     }
 
-    public void StatusButton()
-    {
-        uiMainMenu.OpenStatus();
-    }
-    
-    public void InventoryButton()
-    {
-        uiMainMenu.OpenInventory();
-    }
-    public void BackButton()
-    {
-        uiMainMenu.OpenMainMenu();
-    }
 }

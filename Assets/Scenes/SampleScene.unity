@@ -402,6 +402,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backButton: {fileID: 1830106680}
+  attackText: {fileID: 552304438}
+  defenceText: {fileID: 598440547}
+  hpText: {fileID: 1693191063}
+  strikeText: {fileID: 1363587972}
 --- !u!1 &197471209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1781,6 +1785,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3fddca99f8924a4591c6454b026fa8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiMainButton: {fileID: 1145915314}
+  uiStatus: {fileID: 184761498}
+  uiInventory: {fileID: 197471209}
   uiMainMenu: {fileID: 0}
 --- !u!4 &987171117
 Transform:
